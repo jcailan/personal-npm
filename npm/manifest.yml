@@ -1,0 +1,8 @@
+---
+applications:
+  - name: npm
+    buildpack: nodejs_buildpack
+    memory: 512MB
+    disk_quota: 1024MB
+    instances: 1
+    command: npm start

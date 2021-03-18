@@ -1,0 +1,15 @@
+{
+	"name": "personal-npm",
+	"version": "1.0.0",
+	"description": "Personal NPM Registry",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "sinopia -l ${VCAP_APP_HOST:=localhost}:${VCAP_APP_PORT:=4873} -c ./config.yml"
+	},
+	"author": "Jhodel Cailan",
+	"license": "ISC",
+	"dependencies": {
+		"sinopia": "^1.4.0"
+	}
+}

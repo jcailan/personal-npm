@@ -1,0 +1,16 @@
+ID: npm
+_schema-version: "3.1"
+description: Personal NPM Registry
+version: 1.0.0
+
+modules:
+  - name: npm
+    type: nodejs
+    path: npm
+    parameters:
+      memory: 128M
+      disk-quota: 256M
+    provides:
+      - name: npm-api
+        properties:
+          url: ${default-url}
